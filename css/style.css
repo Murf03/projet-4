@@ -91,7 +91,7 @@ a:hover {
 }
 
 .texture-paper::before {
-    background: url("imgs/texture-paper.webp");
+    background: url("../../imgs/texture-paper.webp");
     background-size: 280px 280px;
 }
 
@@ -810,20 +810,202 @@ h4 {
 }
 
 .bg-dots-bg {
-    background-image: url("imgs/dots-bg.webp");
+    background-image: url("../../imgs/dots-bg.webp");
 }
 
 .bg-lines-h2-bg {
-    background-image: url("imgs/lines-h2-bg.webp");
+    background-image: url("../../imgs/lines-h2-bg.webp");
 }
 
 .bg-banniere {
-    background-image: url("imgs/agence-la-panthere.webp");
+    background-image: url("../../imgs/agence-la-panthere.webp");
 }
 
 .bg-presentation {
-    background-image: url("imgs/image-de-presentation.webp");
+    background-image: url("../../imgs/image-de-presentation.webp");
 }
+
+/*
+ My modifications
+*/
+
+.dark {
+    color: #212121!important;
+}
+.dark:hover {
+    color: #FFFFFF!important;
+}
+
+.logo-img {
+    width: 180px;
+    height: auto;
+}
+
+.title-desc {
+    font-size: 22px;
+    width: 65%;
+    margin: auto;
+    line-height: 25px;
+    word-spacing: 2px;
+    padding-bottom: 20px;
+    color: #595959!important;
+}
+
+.domaine-desc {
+    font-size: 15px;
+    font-weight: 200;
+    color: #252525!important;
+}
+
+.avis-item-text {
+    font-size: 20px;
+    width: 85%;
+    margin: auto;
+    line-height: 22px;
+    word-spacing: 1px;
+    padding-bottom: 0px;
+}
+.avis-item-sign {
+    font-size: 20px;
+    width: 85%;
+    margin: auto;
+    word-spacing: 1px;
+    padding-bottom: 20px;
+    opacity: 0.85;
+    color: #595959!important;
+}
+
+.title-desc-m {
+    color: #595959!important;
+    font-size: 22px;
+    width: 45%;
+    margin: auto;
+    line-height: 25px;
+    word-spacing: 2px;
+    padding-bottom: 20px;
+}
+
+.domaine-desc-m {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #000000!important;
+}
+
+/* Before footer */
+.b5-cta {
+    background-color: #000000;
+    background-image: url("../../imgs/agence-la-panthere.webp");
+}
+
+.bg-col {
+    background-color: transparent;
+}
+
+.col {
+    color: #F3976C!important;
+}
+
+.full-width {
+    width: 100%!important;
+}
+
+.contact-btn {
+    background-color: #F3976C;
+    width: 180px;
+    height: 50px;
+    color: #212121!important;
+    font-size: 16px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    margin: auto;
+    border-radius: 50px;
+    border: 1px solid rgba(0, 0, 0, .08);
+    border-bottom-color: rgba(0, 0, 0, .1);
+    text-shadow: 0 1px 0 rgb(0 0 1 / 10%);
+    box-shadow: 0 1px 3px rgb(0 0 1 / 25%), inset 0 1px 0 0 rgb(255 255 255 / 15%);
+}
+
+.contact-btn:hover {
+    background-color: #F3976C;;
+    opacity: 0.85;
+    box-shadow: 0 1px 3px rgb(0 0 1 / 15%), inset 0 1px 0 0 rgb(255 255 255 / 10%);
+    cursor: pointer;
+}
+
+.contact-btn-txt {
+    color: #212121!important;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+footer {
+    background-color: #F3976C;
+}
+
+.footer-links {
+    margin: auto;
+    max-width: 75%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 2%;
+    padding-right: 2%;
+    border: thick double rgba(0, 0, 0, .8);
+    border-width: 5px 0px 0px 0px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-top-color: #333333;
+}
+.footer-link{
+    margin-top:20px;
+    margin-bottom:30px;
+    display:flex;
+    flex-direction:row;
+    color:#fff;
+    cursor:pointer
+}
+.footer-link:hover .footer-link__txt{
+    text-decoration: underline;
+}
+.footer-link__icon{
+    margin: auto;
+    padding-right: 10px;
+    color: black!important;
+}
+.footer-link__noicon{
+    display:none
+}
+.footer-link__txt{
+    font-weight:300;
+    font-size: 16px;
+    color: black!important;
+}
+
+/* Contact page */
+
+.cu-container {
+    width: auto!important;
+}
+.contact-us {
+    margin-left: 30px;
+    font-size: 15px;
+    font-weight: 300;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: thick double rgba(0, 0, 0, .5);
+    border-width: 0px 0px 3px 0px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-bottom-color: #333333;
+}
+
+/* End of My Modifications */
 
 @media (max-width: 1024px) {
     .bloc {

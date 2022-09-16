@@ -3,7 +3,6 @@
 
 <head>
 	<meta charset="utf-8">
-	<meta name="keywords" content="">
 	<meta name="description"
 		content="Contacter La Panthère, notre agence de développement web, pour photographes, agences de mariage, journaux, et bien plus.">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
@@ -11,26 +10,9 @@
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
 		integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" type="text/css" href="./css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="./css/min/style.css">
 	<link rel="stylesheet" type="text/css" href="./css/min/et-line.css">
 	<title>Contacter La Panthère</title>
-
-
-	<script src="https://code.jquery.com/jquery-2.2.4.min.js"
-		integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous" defer></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-		integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"
-		defer></script>
-	<script src="./js/min/blocs.js" defer></script>
-	<script src="./js/min/jqBootstrapValidation.js" defer></script>
-	<script src="./js/min/formHandler.js" defer></script>
-
-
-	<!-- Analytics -->
-
-	<!-- Analytics END -->
-
 </head>
 
 <body>
@@ -43,8 +25,9 @@
 				<div class="container bloc-sm">
 					<nav class="navbar row">
 						<div class="navbar-header">
-							<a class="navbar-brand" href="index.html"><img src="img/agence-la-panthere-monochrome.svg"
-									alt="atlanta web design logo" height="40" /></a>
+							<a class="navbar-brand" href="index.html"><img class="logo-img"
+									src="imgs/agence-la-panthere-monochrome.svg"
+									alt="Logo La Panthère, meilleure agence web Lyon" height="40" /></a>
 							<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle"
 								data-toggle="collapse" data-target=".navbar-1">
 								<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span
@@ -54,12 +37,7 @@
 						<div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
 							<ul class="site-navigation nav navbar-nav">
 								<li>
-									<a href="index.html">Accueil</a>
-								</li>
-								<li>
-								</li>
-								<li>
-									<a href="page2.html">Contact</a>
+									<a href="./index.html">Accueil</a>
 								</li>
 							</ul>
 						</div>
@@ -74,10 +52,10 @@
 				<div class="container bloc-lg">
 					<div class="row">
 						<div class="col-sm-12">
-							<h1 class="text-center hero-bloc-text tc-white">
+							<h1 class="text-center hero-bloc-text dark">
 								Parlons web design !
 							</h1>
-							<p class="text-center mg-lg tc-white tight-width-whitespace">
+							<p class="text-center mg-lg ltc-white tight-width-whitespace domaine-desc"><br>
 								Nous sommes ravis que vous souhaitiez collaborer avec notre agence.<br>
 								Parlez-nous de votre projet en complétant le formulaire ci-dessous.
 							</p>
@@ -95,37 +73,36 @@
 							<form id="form_1" novalidate success-msg="Your message has been sent."
 								fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
 								<div class="form-group">
-									<label>
+									<label for="name">
 										Nom
 									</label>
 									<input id="name" class="form-control" required />
 								</div>
 								<div class="form-group">
-									<label>
+									<label for="email">
 										Adresse email
 									</label>
 									<input id="email" class="form-control" type="email" required />
 								</div>
 								<div class="form-group">
-									<label>
+									<label for="input_504">
 										Comment nous avez-vous connu ?
 									</label>
 									<input class="form-control" type="email" required id="input_504" />
 								</div>
 								<div class="form-group">
-									<label>
+									<label for="message">
 										Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
 									</label><textarea id="message" class="form-control" rows="4" cols="50"
 										required></textarea>
 								</div>
-								<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine"
-									type="submit">
+								<button class="contact-btn full-width" type="submit">
 									Envoyer
 								</button>
 							</form>
 						</div>
-						<div class="col-sm-6">
-							<p>
+						<div class="col-sm-6 cu-container">
+							<p class="contact-us">
 								contact@agencelapanthere.com<br>2 place Sathonay 69001 Lyon<br>Ouvert de 9h à 18h, du
 								lundi
 								au vendredi<br>
@@ -137,8 +114,8 @@
 			<!-- bloc-7 END -->
 
 			<!-- ScrollToTop Button -->
-			<a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')"><span
-					class="fa fa-chevron-up"></span></a>
+			<a href="#" class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1', event)"
+				aria-label="Bouton pour retourner en haut de la page"><span class="fa fa-chevron-up"></span></a>
 			<!-- ScrollToTop Button END-->
 
 		</div>
@@ -147,36 +124,35 @@
 
 
 	<footer>
-		<!-- Footer - bloc-8 -->
 		<div class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
 			<div class="container bloc-sm">
 				<div class="row">
 					<div class="col-sm-12">
-						<p class="text-center white">
+						<p class="text-center white domaine-desc">
 							Agence La Panthère - Agence web basée à Lyon.<br>
 						</p>
 						<div class="row row-no-gutters social">
 							<div class="col-sm-3">
 								<div class="text-center">
-									<a class="social" href="index.html" aria-label="Lien Twitter"><span
+									<a class="social" href="#" aria-label="Lien Twitter"><span
 											class="fa fa-twitter icon-md"></span></a>
 								</div>
 							</div>
 							<div class="col-sm-3">
 								<div class="text-center">
-									<a class="social" href="index.html" aria-label="Lien Facebook"><span
+									<a class="social" href="#" aria-label="Lien Facebook"><span
 											class="fa fa-facebook icon-md"></span></a>
 								</div>
 							</div>
 							<div class="col-sm-3">
 								<div class="text-center">
-									<a class="social" href="index.html" aria-label="Lien Dribbble"><span
+									<a class="social" href="#" aria-label="Lien Dribbble"><span
 											class="fa fa-dribbble icon-md"></span></a>
 								</div>
 							</div>
 							<div class="col-sm-3">
 								<div class="text-center">
-									<a class="social" href="index.html" aria-label="Lien Instagram"><span
+									<a class="social" href="#" aria-label="Lien Instagram"><span
 											class="fa fa-instagram icon-md"></span></a>
 								</div>
 							</div>
@@ -185,9 +161,35 @@
 				</div>
 			</div>
 		</div>
-		<!-- Footer - bloc-8 END -->
+		<div class="footer-links">
+			<a class="footer-link" href="#">
+				<i class="fa-solid fa-file-contract footer-link__icon"></i>
+				<span class="footer-link__txt">Conditions générales d'utilisation</span>
+			</a>
+			<a class="footer-link" href="#">
+				<i class="fa-solid fa-handshake-angle footer-link__icon"></i>
+				<span class="footer-link__txt">Devenir partenaire</span>
+			</a>
+			<a class="footer-link" href="#">
+				<i class="fa-solid fa-scale-balanced footer-link__icon"></i>
+				<span class="footer-link__txt">Mentions légales</span>
+			</a>
+			<a class="footer-link" href="contact.html">
+				<i class="fa-solid fa-paper-plane footer-link__icon"></i>
+				<span class="footer-link__txt">Contact</span>
+			</a>
+		</div>
 	</footer>
 
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"
+		integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+		integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+		crossorigin="anonymous"></script>
+	<script src="./js/min/blocs.js"></script>
+	<script src="./js/min/jqBootstrapValidation.js"></script>
+	<script src="./js/min/formHandler.js"></script>
+	<script src="https://kit.fontawesome.com/0c464140a2.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
