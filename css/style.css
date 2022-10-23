@@ -829,13 +829,6 @@ h4 {
  My modifications
 */
 
-.dark {
-    color: #212121!important;
-}
-.dark:hover {
-    color: #FFFFFF!important;
-}
-
 .logo-img {
     width: 180px;
     height: auto;
@@ -852,9 +845,8 @@ h4 {
 }
 
 .domaine-desc {
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 200;
-    color: #252525!important;
 }
 
 .avis-item-text {
@@ -1030,13 +1022,13 @@ footer {
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
@@ -1055,8 +1047,8 @@ footer {
         position: relative;
     }
     .bloc {
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
+        padding-left: 10px;
+        padding-right: 10px;
     }
     .bloc-group,
     .bloc-group .bloc {
@@ -1066,8 +1058,8 @@ footer {
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }
 
