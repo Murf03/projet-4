@@ -845,8 +845,14 @@ h4 {
 }
 
 .domaine-desc {
-    font-size: 16px;
+    font-size: 18px!important;
     font-weight: 200;
+}
+
+.contact-desc {
+    font-size: 18px!important;
+    font-weight: 200;
+    color: white;
 }
 
 .avis-item-text {
